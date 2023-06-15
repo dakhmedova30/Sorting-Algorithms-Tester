@@ -1,0 +1,53 @@
+Crabby Chips: Lauren Lee and Diana Akhmedova
+APCS pd8
+L04: Never Fear, Big O is Here!
+2022-01-10
+Time Spent: 2.5 hrs
+SOTW: Are You Bored Yet? by Wallows
+
+DISCO:
+* We did not know that it would take 55 comparisons for Selection Sort, as we traced only 45.
+* In Selection Sort, when comparing the same element, the elements are still swapped.
+
+QCC:
+* Is there a way to augment Selection Sort to be more efficient?
+* If Insertion Sort is the most efficient sort overall out of the three we tested, is there another/other sort method(s) that are even more efficient?
+
+BUB-QA:
+* q0: If a pass requires no swaps, what do you know?
+* a0: This means that the array is already in increasing order.
+
+* q1: After pass p, what do you know?
+* a1: After pass p, we know that all of the p values are sorted.
+
+* q2: How many passes are necessary to completely sort?
+* a2: length-1.
+
+SEL-QA:
+* q0: How many passes to sort n elements?
+* a0: n-1.
+
+* q1: What do you know after pass p?
+* a1: The last p elements are in their right place.
+
+* q2: How do you know if sorted?
+* a2: n-1 passes were performed.
+
+* q3: What does a pass boil down to?
+* a3: A pass is going through the array once and swapping.
+
+INS-QA:
+* q0: How many passes to sort n elements?
+* a0: n-1.
+
+* q1: What do you know after pass p?
+* a1: The first p+1 elements are sorted.
+
+* q2: How will you know when sorted?
+* a2: You know it is sorted once all swaps are completed.
+
+* q3: What constitutes a pass?
+* a3: The first p+1 elements are sorted through walking the first unsorted element into its right place in the partition.
+
+* q4: What must you track?
+* a4: You must track the partition.
